@@ -380,7 +380,7 @@ static vial_tap_dance_entry_t td_entry;
 
 static uint8_t dance_step(tap_dance_state_t *state) {
     if (state->count == 1) {
-        if (state->interrupted || !state->pressed) return SINGLE_TAP;
+        if (!state->pressed) return SINGLE_TAP;
         else return SINGLE_HOLD;
     } else if (state->count == 2) {
         if (state->interrupted) return DOUBLE_SINGLE_TAP;
