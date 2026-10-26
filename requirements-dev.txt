@@ -2,8 +2,8 @@
 -r requirements.txt
 
 # Python development requirements
-nose2
-flake8
-pep8-naming
-pyflakes
-yapf
+nose2>=0.16.0
+flake8>=7.4.1
+pep8-naming>=0.15.1
+pyflakes>=4.0.3
+yapf>=0.43.0
